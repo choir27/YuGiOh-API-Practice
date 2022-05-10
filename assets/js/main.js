@@ -178,4 +178,33 @@ class DOM{
 	document.querySelector('#close').addEventListener('click',closeNav.navSlide)
 	document.querySelector('#open').addEventListener('click',openNav.navSlide)
   
-	
+
+dom.getDOM('#draw5').addEventListener('click',drawFive)
+
+
+function drawFive(){
+	let url = 'https://db.ygoprodeck.com/api/v7/cardinfo.php'
+  fetch(url)
+  .then(res=>res.json())
+  .then(data=>{
+  for(let i = 0;i<5;i++){
+    let random = Math.round(Math.random()*11855)
+    let image = data.data
+    image = image[random].card_images[0].image_url
+    let hand = document.createElement('img')
+    hand.src = image
+    dom.getDOM('#hand1').appendChild(hand)
+  }
+    
+
+  for(let i = 0;i<5;i++){
+    let random = Math.round(Math.random()*11855)
+    let image = data.data
+    image = image[random].name
+    let hand = document.createElement('h6')
+    hand.innerText = image
+    dom.getDOM('#name1').appendChild(hand)
+  }
+
+  })
+}

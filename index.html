@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>Stellar by HTML5 UP</title>
@@ -23,11 +18,16 @@
 				<!-- Header -->
 					<header id="header" class="alt">
 						<span class="logo"><img src="images/logo.svg" alt="" /></span>
-						<h1>Stellar</h1>
-						<p>Just another free, fully responsive site template<br />
-						built by <a href="https://twitter.com/ajlkn">@ajlkn</a> for <a href="https://html5up.net">HTML5 UP</a>.</p>
+						<h1>Yu-Gi-Oh! Card Database</h1>
 					</header>
-
+					<nav id="nav" class="alt">
+						<ul>
+							<li><a href="#intro" class="active">Introduction</a></li>
+							<li><a href="#first" class="">First Section</a></li>
+							<li><a href="#second" class="">Second Section</a></li>
+							<li><a href="#cta">Get Started</a></li>
+						</ul>
+					</nav>
 				<!-- Main -->
 					<div id="main">
 
@@ -36,16 +36,18 @@
 								<div class="spotlight">
 									<div class="content">
 										<header class="major">
-											<h2>Ipsum sed adipiscing</h2>
+											<h2 class = 'cardName'>Card Name</h2>
 										</header>
-										<p>Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna
-										adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus.
-										Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.</p>
-										<ul class="actions">
-											<li><a href="generic.html" class="button">Learn More</a></li>
-										</ul>
+										<div class = 'grid'>
+												<input placeholder = 'Type Card Name Here'>
+											<button id = 'submit'>Search Card</button>
+										
+										</div>
+										<section class = 'flex'>
+										<p class = 'cardEffect'>Card Effect</p>
+										</section>
 									</div>
-									<span class="image"><img src="images/pic01.jpg" alt="" /></span>
+								<img class = 'card' src = 'images/back.png'>
 								</div>
 							</section>
 
@@ -57,26 +59,16 @@
 								<button id = 'close'>X</button>
 								<div class = 'sideContent'>
 								<h1>YuGiOh Card Database</h1>
-								<i class="fa-brands fa-linkedin"></i>
-								<i class="fa-brands fa-twitter-square"></i>
-									<i class="fa-brands fa-github"></i>
-									<i class="fa-regular fa-envelope"></i>	
+								<ul class = 'socialMedia'>
+									<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+									</ul>
+
 								</div></header>
 							
-							
-							<div class = 'grid'>
-								<form>
-									<input placeholder = 'Type Card Name Here'>
-								</form>
-								<button id = 'submit'>Submit</button>
-							<img class = 'card'>
-							</div>
-							
-							<section class = 'flex'>
-							<h2 class = 'cardName'>Card Name</h2>
-							<p class = 'cardEffect'>Card Effect</p>
-							</section>
-
+					
 
 								<header class="major">
 									<h2>Magna veroeros</h2>
@@ -108,11 +100,15 @@
 						<!-- Second Section -->
 							<section id="second" class="main special">
 								<header class="major">
-									<h2>Ipsum consequat</h2>
-									<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-									posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
+									<button id = 'draw5'>Draw 5</button>
+									<p class = 'flex' id = 'name1'></p>
+									<div id='hand1'>
+									</div>
+
 								</header>
-								<ul class="statistics">
+							</section>
+
+								<!-- <ul class="statistics">
 									<li class="style1">
 										<span class="icon solid fa-code-branch"></span>
 										<strong>5,120</strong> Etiam
@@ -133,60 +129,25 @@
 										<span class="icon fa-gem"></span>
 										<strong>1,024</strong> Nullam
 									</li>
-								</ul>
-								<p class="content">Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed eleifend a enim pulvinar faucibus semper quis ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna libero. Morbi auctor iaculis porttitor. Sed ut magna ac risus et hendrerit scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras eu ornare dui curabitur lacinia.</p>
+								</ul> -->
+								<!-- <p class="content">Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed eleifend a enim pulvinar faucibus semper quis ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna libero. Morbi auctor iaculis porttitor. Sed ut magna ac risus et hendrerit scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras eu ornare dui curabitur lacinia.</p>
 								<footer class="major">
-									<ul class="actions special">
-										<li><a href="generic.html" class="button">Learn More</a></li>
-									</ul>
-								</footer>
-							</section>
+								</footer> -->
 
 						<!-- Get Started -->
 							<section id="cta" class="main special">
 								<header class="major">
-									<h2>Congue imperdiet</h2>
-									<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-									posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
+									<h2>About Me</h2>
+									<p>Since the beginning, I have been interested in technology, especially being fascinated by making my own video game.  While exploring my love for drawing, I grew to love creating and growing my skills: which developed my passion for experimenting with code, creating new projects with code, and learning new concepts about coding and technology. Coming from a banking background, I also developed a love for assisting people, which I hope I can achieve through making various applications.  I wish to continue working in an environment that will promote growth and experimentation while also being a place where I can help others by constantly building applications.</p>
+
 								</header>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="generic.html" class="button primary">Get Started</a></li>
-										<li><a href="generic.html" class="button">Learn More</a></li>
-									</ul>
-								</footer>
 							</section>
 
-					</div> -->
+					</div>
 
 				<!-- Footer -->
 					<footer id="footer">
-						<section>
-							<h2>Aliquam sed mauris</h2>
-							<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
-							<ul class="actions">
-								<li><a href="generic.html" class="button">Learn More</a></li>
-							</ul>
-						</section>
-						<section>
-							<h2>Etiam feugiat</h2>
-							<dl class="alt">
-								<dt>Address</dt>
-								<dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
-								<dt>Phone</dt>
-								<dd>(000) 000-0000 x 0000</dd>
-								<dt>Email</dt>
-								<dd><a href="#">information@untitled.tld</a></dd>
-							</dl>
-							<ul class="icons">
-								<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-								<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
-							</ul>
-						</section>
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+						<p class="copyright">&copy; choir <a href="https://html5up.net">HTML5 UP</a>.</p>
 					</footer>
 
 			</div>

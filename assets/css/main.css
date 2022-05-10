@@ -1,12 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400';
 
-/*
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -3786,7 +3780,7 @@ input, select, textarea {
 
 
 
-		/******************************************
+/******************************************
 /* CSS
 /*******************************************/
 
@@ -3811,20 +3805,23 @@ input, select, textarea {
 	flex-flow: column wrap;
 	align-items: center;
 	overflow: auto;
-	/* width: 550px; */
-	/* height: 850px; */
   }
   
   .gridBox{
-	height: 704vh;
+	height: 566vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: flex-start;
-	
   }
-  
-  
+  #hand1{
+	display: flex;
+	overflow: auto;
+  }
+  #hand1 img{
+	width: 20%;
+  }
+
   .card{
 	width:40%;
   }
@@ -3849,7 +3846,8 @@ input, select, textarea {
 	flex-wrap: column wrap;
 	align-items: center;
   }
-  
+
+
   input{
 	margin-top: 12%;
 	margin-bottom: 4%;
@@ -3866,12 +3864,14 @@ input, select, textarea {
 
   body{
 	background: no-repeat url('images/background1.png') center/cover;
-
   }
 
+body{
+	height: 460vh;
+}
 
   #sidebar{
-	height: 850px;
+	height: 800px;
 	width: 20%;
 	top: 0;
 	left: 0;
@@ -3915,8 +3915,25 @@ input, select, textarea {
 	font-size: 3rem;
 	width: 20%;
 	display: flex;
-  
   }
+
+  .socialMedia,.sideContent{
+	margin-top: 7%;
+  }
+
+  .sideContent h1{
+	  font-size: 3rem;
+	  margin-left: -8%;
+  }
+
+  .socialMedia{
+	  display: flex;
+	  flex-wrap: column wrap;
+	  list-style-type: none;
+margin-left: -11%;  
+}
+
+
   /******************************************
   /* ADDITIONAL STYLES
   /*******************************************/
