@@ -187,6 +187,9 @@ function drawFive(){
   fetch(url)
   .then(res=>res.json())
   .then(data=>{
+removeAllChildNodes(dom.getDOM('#hand1'))
+removeAllChildNodes(dom.getDOM('#name1'))
+
   for(let i = 0;i<5;i++){
     let random = Math.round(Math.random()*11855)
     let image = data.data
@@ -194,17 +197,19 @@ function drawFive(){
     let hand = document.createElement('img')
     hand.src = image
     dom.getDOM('#hand1').appendChild(hand)
-  }
-    
 
-  for(let i = 0;i<5;i++){
-    let random = Math.round(Math.random()*11855)
-    let image = data.data
-    image = image[random].name
-    let hand = document.createElement('h6')
-    hand.innerText = image
-    dom.getDOM('#name1').appendChild(hand)
+	let title = data.data
+    title = title[random].name
+    let heading = document.createElement('h6')
+    heading.innerText = title
+    dom.getDOM('#name1').appendChild(heading)
   }
 
   })
+}
+
+function removeAllChildNodes(parent) {
+    while (parent.firstChild) {
+        parent.removeChild(parent.firstChild);
+    }
 }

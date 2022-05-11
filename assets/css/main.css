@@ -3807,13 +3807,11 @@ input, select, textarea {
 	overflow: auto;
   }
   
-  .gridBox{
-	height: 566vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: flex-start;
+  div#gridBox{
+	margin-left: -9.5%;
   }
+
+  
   #hand1{
 	display: flex;
 	overflow: auto;
@@ -3867,7 +3865,7 @@ input, select, textarea {
   }
 
 body{
-	height: 460vh;
+	height: 100%;
 }
 
   #sidebar{
@@ -3937,4 +3935,14 @@ margin-left: -11%;
   /******************************************
   /* ADDITIONAL STYLES
   /*******************************************/
-  
+  video{
+	  width: 60%;
+  }
+
+ #nav{
+	  width: 60%;
+  }
+  .center{
+	display: flex;
+	justify-content: center;
+  }
