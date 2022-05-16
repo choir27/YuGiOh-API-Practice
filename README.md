@@ -1,4 +1,4 @@
 # YuGiOh-Card-Database
 
 <a href = 'https://yugioh-card-database.netlify.app/'>Website</a>
-<img src = 'images/thumbnail.jpg'>
+<img src = 'images/Thumbnail.PNG'>
