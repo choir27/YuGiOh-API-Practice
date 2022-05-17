@@ -138,7 +138,6 @@ class DOM{
 	  .then(data=>{
 		let value = dom.getDOM('input').value.trim().toLowerCase()
 		data.data.forEach(ele=>{
-		  console.log(ele.name)
 		 if(ele.name.toLowerCase()===value){
 		  dom.getDOM('.cardName').innerText = ele.name
 		  dom.getDOM('.cardEffect').innerText = ele.desc
